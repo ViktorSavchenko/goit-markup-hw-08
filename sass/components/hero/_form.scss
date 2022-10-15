@@ -134,6 +134,8 @@
   position: absolute;
   top: -2px;
   left: -2px;
+
+  display: none;
 }
 
 .check-link-treaty {
@@ -178,4 +180,8 @@
 
 .form-checkbox:focus + .checkbox-action {
   border-color: getColor('active_color');
+}
+
+.form-checkbox:checked + .checkbox-action .check-icon {
+  display: block;
 }

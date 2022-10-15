@@ -1,0 +1,19 @@
+.filter-list__btn {
+  padding: 6px 22px;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+
+  color: getColor('primary');
+
+  background-color: getBgcbtn('wk-primary');
+
+  transition: color $duration $timingF, background-color $duration $timingF,
+    box-shadow $duration $timingF;
+}

@@ -13,6 +13,8 @@
     pointer-events: none;
     visibility: hidden;
 
+    z-index: 1;
+
     background-color: getColor('white_bgc');
 
     transition: transform $duration $timingF, visibility $duration $timingF;
@@ -32,7 +34,8 @@
 
 .mobile-menu__btn {
   @media screen and (max-width: 767px) {
-    display: block;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
 
     width: 40px;
@@ -47,8 +50,16 @@
 
     &-close {
       position: absolute;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
       top: 10px;
       right: 15px;
+
+      width: 40px;
+      height: 40px;
 
       background-color: transparent;
       border: none;

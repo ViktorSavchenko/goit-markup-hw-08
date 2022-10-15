@@ -1,0 +1,33 @@
+.works-section--positioning {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filter-list {
+  &--positioning {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    margin-bottom: 50px;
+  }
+
+  &__item--positioning:not(:first-child) {
+    margin-left: 8px;
+  }
+}
+
+.product-list {
+  &--positioning {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__item--positioning {
+    flex-basis: calc((100% - 30px * 2) / 3);
+  }
+}
+
+.product-thumb__text--positiong {
+  padding: 20px 24px;
+}

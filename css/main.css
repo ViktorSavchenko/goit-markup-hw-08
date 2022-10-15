@@ -13,7 +13,6 @@ img {
 .container {
   padding: 0 15px;
   margin: 0 auto;
-  outline: 1px solid tomato;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -93,8 +92,9 @@ a {
     overflow-y: scroll;
     pointer-events: none;
     visibility: hidden;
+    z-index: 1;
     background-color: #ffffff;
-    transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .mobile-menu.is-open {
     transform: translateX(0);
@@ -111,7 +111,8 @@ a {
 
 @media screen and (max-width: 767px) {
   .mobile-menu__btn {
-    display: block;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
@@ -123,8 +124,13 @@ a {
   }
   .mobile-menu__btn-close {
     position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     top: 10px;
     right: 15px;
+    width: 40px;
+    height: 40px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -149,7 +155,7 @@ a {
 .mobile-menu__icon,
 .mobile-menu__icon-close {
   fill: #000000;
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (max-width: 767px) {
@@ -192,7 +198,7 @@ a {
 
 .nav__link {
   display: inline-flex;
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
   .nav__link {
@@ -275,7 +281,7 @@ a {
 }
 
 .contact-list__link {
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
   .contact-list__link {
@@ -325,7 +331,7 @@ a {
 }
 
 .contact-list__icon {
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
   .contact-list__icon-mail, .contact-list__icon-phone {
@@ -466,7 +472,7 @@ a {
 .hero-btn {
   padding: 10px 24px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -493,7 +499,7 @@ a {
   width: 100%;
   height: 100%;
   z-index: 1;
-  transition: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -516,7 +522,7 @@ a {
   height: 609px;
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -546,7 +552,7 @@ a {
 }
 
 .modal-btn .icon {
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field {
@@ -589,7 +595,7 @@ a {
   margin-bottom: 10px;
   width: 100%;
   height: 40px;
-  transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -609,7 +615,7 @@ a {
   left: 12px;
   transform: translateY(-50%);
   fill: #212121;
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-textarea {
@@ -620,7 +626,7 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
-  transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-textarea:focus {
   outline: 0;
@@ -673,7 +679,7 @@ a {
   background-color: #ffffff;
   border: 2px solid #212121;
   border-radius: 2px;
-  transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-flex {
@@ -701,6 +707,7 @@ a {
   position: absolute;
   top: -2px;
   left: -2px;
+  display: none;
 }
 
 .check-link-treaty {
@@ -722,7 +729,7 @@ a {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-btn:hover, .form-btn:focus {
   background-color: #188ce8;
@@ -739,6 +746,10 @@ a {
 
 .form-checkbox:focus + .checkbox-action {
   border-color: #2196f3;
+}
+
+.form-checkbox:checked + .checkbox-action .check-icon {
+  display: block;
 }
 
 .advances-section {
@@ -972,11 +983,11 @@ a {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list__icon {
   fill: #afb1b8;
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list__link:hover .social-list__icon--active,
@@ -1045,7 +1056,7 @@ a {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list__link:hover, .clients-list__link:focus {
   border-color: #2196f3;
@@ -1056,7 +1067,7 @@ a {
 
 .clients-list__icon {
   fill: #afb1b8;
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-page {
@@ -1155,7 +1166,7 @@ a {
   letter-spacing: 0.03em;
   color: #ffffff;
   font-style: normal;
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adrs__link--grey {
   color: rgba(255, 255, 255, 0.6);
@@ -1173,7 +1184,7 @@ a {
 }
 
 .social-list__link {
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list__link:hover, .social-list__link:focus {
   background-color: #2196f3;
@@ -1245,4 +1256,125 @@ a {
 .footer-form {
   display: flex;
   justify-content: center;
+}
+
+.filter-list__btn {
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  background-color: getBgcbtn("wk-primary");
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.works-section--positioning {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filter-list--positioning {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.filter-list__item--positioning:not(:first-child) {
+  margin-left: 8px;
+}
+
+.product-list--positioning {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.product-list__item--positioning {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.product-thumb__text--positiong {
+  padding: 20px 24px;
+}
+
+.works-title--hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.product-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.product-thumb__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.product-thumb__type {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.product-thumb__text {
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.product-list__link {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-overlay {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(101%);
+  pointer-events: none;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.product-overlay__text {
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.filter-list__btn--active:hover,
+.filter-list__btn--active:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.product-list__link--active:hover,
+.product-list__link--active:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.product-list__link--active:hover .product-overlay,
+.product-list__link--active:focus .product-overlay {
+  transform: translateY(0);
 }/*# sourceMappingURL=main.css.map */
