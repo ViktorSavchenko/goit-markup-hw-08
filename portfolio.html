@@ -129,37 +129,55 @@
         <div class="container">
           <h1 class="works-title--hidden">Our works</h1>
 
-          <ul class="filter-list filter-list--positioning">
-            <li class="filter-list__item filter-list__item--positioning">
-              <button class="filter-list__btn filter-list__btn--active" type="button">Усі</button>
-            </li>
-            <li class="filter-list__item filter-list__item--positioning">
-              <button class="filter-list__btn filter-list__btn--active" type="button">
-                Веб-сайти
+          <div class="btn-thumb btn-thumb--positioning">
+            <div class="btn-thumb__first btn-thumb__first--positioning">
+              <button
+                class="filter-btn filter-btn--positioning filter-btn--positioning-none"
+                type="button"
+              >
+                Усі
               </button>
-            </li>
-            <li class="filter-list__item filter-list__item--positioning">
-              <button class="filter-list__btn filter-list__btn--active" type="button">
-                Додатки
-              </button>
-            </li>
-            <li class="filter-list__item filter-list__item--positioning">
-              <button class="filter-list__btn filter-list__btn--active" type="button">
-                Дизайн
-              </button>
-            </li>
-            <li class="filter-list__item filter-list__item--positioning">
-              <button class="filter-list__btn filter-list__btn--active" type="button">
-                Маркетинг
-              </button>
-            </li>
-          </ul>
+
+              <button class="filter-btn filter-btn--positioning" type="button">Веб-сайти</button>
+
+              <button class="filter-btn filter-btn--positioning" type="button">Додатки</button>
+            </div>
+
+            <div class="btn-thumb__second btn-thumb__second--positioning">
+              <button class="filter-btn filter-btn--positioning" type="button">Дизайн</button>
+
+              <button class="filter-btn filter-btn--positioning" type="button">Маркетинг</button>
+            </div>
+          </div>
 
           <ul class="product-list product-list--positioning">
             <li class="product-list__item product-list__item--positioning">
               <a href="" class="product-list__link product-list__link--active">
                 <div class="product-thumb">
-                  <img src="./images/img2-1.jpg" alt="Технокряк" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/tehno-mob.jpg,
+                        ./images/portfolio/tehno-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767.99px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tehno-tablet.jpg,
+                        ./images/portfolio/tehno-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px) and (max-width:1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tehno-desk.jpg,
+                        ./images/portfolio/tehno-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/portfolio/tehno450x294" alt="Технокряк" />
+                  </picture>
 
                   <div class="product-overlay">
                     <p class="product-overlay__text">
@@ -179,11 +197,27 @@
             <li class="product-list__item product-list__item--positioning">
               <a href="" class="product-list__link product-list__link--active">
                 <div class="product-thumb">
-                  <img
-                    src="./images/img2-2.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/2-mob.jpg, ./images/portfolio/2-mob@2x.jpg 2x"
+                      media="(max-width:767.99px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/2-tablet.jpg,
+                        ./images/portfolio/2-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px) and (max-width:1199px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/2-desk.jpg, ./images/portfolio/2-desk@2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <img
+                      src="./images/portfolio/2-mob.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
 
                   <div class="product-overlay">
                     <p class="product-overlay__text">
@@ -194,7 +228,9 @@
                   </div>
                 </div>
                 <div class="product-thumb__text product-thumb__text--positiong">
-                  <h2 class="product-thumb__name">Постер New Orlean vs Golden Star</h2>
+                  <h2 class="product-thumb__name product-thumb__name--small">
+                    Постер New Orlean vs Golden Star
+                  </h2>
                   <p class="product-thumb__type">Дизайн</p>
                 </div>
               </a>
@@ -203,7 +239,24 @@
             <li class="product-list__item product-list__item--positioning">
               <a href="" class="product-list__link product-list__link--active">
                 <div class="product-thumb">
-                  <img src="./images/img2-3.jpg" alt="Ресторан Seafood" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/3-mob.jpg, ./images/portfolio/3-mob@2x.jpg 2x"
+                      media="(max-width:767.99px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/3-tablet.jpg,
+                        ./images/portfolio/3-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px) and (max-width:1199px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/3-desk.jpg, ./images/portfolio/3-desk@2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/portfolio/3-mob.jpg" alt="Ресторан Seafood" />
+                  </picture>
 
                   <div class="product-overlay">
                     <p class="product-overlay__text">
@@ -223,7 +276,24 @@
             <li class="product-list__item product-list__item--positioning">
               <a href="" class="product-list__link product-list__link--active">
                 <div class="product-thumb">
-                  <img src="./images/img2-4.jpg" alt="Проєкт Prime" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/4-mob.jpg, ./images/portfolio/4-mob@2x.jpg 2x"
+                      media="(max-width:767.99px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/4-tablet.jpg,
+                        ./images/portfolio/4-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px) and (max-width:1199px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/4-desk.jpg, ./images/portfolio/4-desk@2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/portfolio/4-mob.jpg" alt="Проєкт Prime" />
+                  </picture>
 
                   <div class="product-overlay">
                     <p class="product-overlay__text">
@@ -243,7 +313,24 @@
             <li class="product-list__item product-list__item--positioning">
               <a href="" class="product-list__link product-list__link--active">
                 <div class="product-thumb">
-                  <img src="./images/img2-5.jpg" alt="Проєкт Boxes" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/5-mob.jpg, ./images/portfolio/5-mob@2x.jpg 2x"
+                      media="(max-width:767.99px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/5-tablet.jpg,
+                        ./images/portfolio/5-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px) and (max-width:1199px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/5-desk.jpg, ./images/portfolio/5-desk@2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/portfolio/5-mob.jpg" alt="Проєкт Boxes" />
+                  </picture>
 
                   <div class="product-overlay">
                     <p class="product-overlay__text">
@@ -263,7 +350,24 @@
             <li class="product-list__item product-list__item--positioning">
               <a href="" class="product-list__link product-list__link--active">
                 <div class="product-thumb">
-                  <img src="./images/img2-6.jpg" alt="Inspiration has no Borders" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/6-mob.jpg, ./images/portfolio/6-mob@2x.jpg 2x"
+                      media="(max-width:767.99px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/6-tablet.jpg,
+                        ./images/portfolio/6-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px) and (max-width:1199px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/6-desk.jpg, ./images/portfolio/6-desk@2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/portfolio/6-mob.jpg" alt="Inspiration has no Borders" />
+                  </picture>
 
                   <div class="product-overlay">
                     <p class="product-overlay__text">
@@ -283,7 +387,24 @@
             <li class="product-list__item product-list__item--positioning">
               <a href="" class="product-list__link product-list__link--active">
                 <div class="product-thumb">
-                  <img src="./images/img2-7.jpg" alt="Видання Limited Edition" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/7-mob.jpg, ./images/portfolio/7-mob@2x.jpg 2x"
+                      media="(max-width:767.99px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/7-tablet.jpg,
+                        ./images/portfolio/7-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px) and (max-width:1199px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/7-desk.jpg, ./images/portfolio/7-desk@2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/portfolio/7-mob.jpg" alt="Видання Limited Edition" />
+                  </picture>
 
                   <div class="product-overlay">
                     <p class="product-overlay__text">
@@ -303,7 +424,24 @@
             <li class="product-list__item product-list__item--positioning">
               <a href="" class="product-list__link product-list__link--active">
                 <div class="product-thumb">
-                  <img src="./images/img2-8.jpg" alt="Проєкт LAB" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/8-mob.jpg, ./images/portfolio/8-mob@2x.jpg 2x"
+                      media="(max-width:767.99px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/8-tablet.jpg,
+                        ./images/portfolio/8-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px) and (max-width:1199px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/8-desk.jpg, ./images/portfolio/8-desk@2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/portfolio/8-mob.jpg" alt="Проєкт LAB" />
+                  </picture>
 
                   <div class="product-overlay">
                     <p class="product-overlay__text">
@@ -323,7 +461,24 @@
             <li class="product-list__item product-list__item--positioning">
               <a href="" class="product-list__link product-list__link--active">
                 <div class="product-thumb">
-                  <img src="./images/img2-9.jpg" alt="Growing Business" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/9-mob.jpg, ./images/portfolio/9-mob@2x.jpg 2x"
+                      media="(max-width:767.99px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/9-tablet.jpg,
+                        ./images/portfolio/9-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px) and (max-width:1199px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/9-desk.jpg, ./images/portfolio/9-desk@2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/portfolio/9-mob.jpg" alt="Growing Business" />
+                  </picture>
 
                   <div class="product-overlay">
                     <p class="product-overlay__text">
